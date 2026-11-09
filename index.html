@@ -1,53 +1,571 @@
-<!-- Felt boots, yurts and Kazakh ornaments -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f2eb">
+<meta name="description" content="ТОО «Роза-валяльно-войлочный комбинат» — производство изделий из натуральной шерсти и войлока в Семее с 1991 года.">
+<title>РОЗА-ВВК — Производство войлока и изделий из шерсти</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#f5f2eb;--paper:#fffefa;--dark:#242720;--muted:#77786f;--accent:#a58b68;--line:#e5e0d6;--serif:'Playfair Display',Georgia,serif;--sans:'Manrope',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--dark);font-family:var(--sans);line-height:1.7}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.container{width:min(1160px,90%);margin:auto}
+
+header{position:sticky;top:0;z-index:100;background:rgba(245,242,235,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.logo{font-size:21px;font-weight:800;letter-spacing:2px;white-space:nowrap}
+.logo span{display:block;color:var(--muted);font-size:9px;letter-spacing:2.5px;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:22px;font-size:11px;font-weight:800}
+.nav-links a:hover{color:var(--accent)}
+.right-nav{display:flex;align-items:center;gap:6px}
+.lang{border:1px solid var(--line);background:transparent;padding:7px 9px;border-radius:5px;font-size:10px;font-weight:800;color:var(--dark)}
+.lang.active{background:var(--dark);color:white;border-color:var(--dark)}
+.menu-btn{display:none;border:0;background:none;font-size:25px}
+
+.hero{min-height:610px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(232,226,214,.97) 0%,rgba(213,201,181,.83) 48%,rgba(169,154,131,.28) 100%),url('https://tirshilik-tynysy.kz/uploads/posts/2025-10/1761025598_bcf9bb32-ea90-488a-9be9-22e956e9e512.jpeg') center/cover}
+.hero:after{content:"";position:absolute;width:570px;height:570px;border-radius:50%;border:1px solid rgba(255,255,255,.4);right:-100px;top:20px;box-shadow:0 0 0 35px rgba(255,255,255,.07),0 0 0 80px rgba(255,255,255,.06)}
+.hero-inner{position:relative;z-index:2;max-width:720px;padding:100px 0}
+.eyebrow,.section-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:#806e55;margin-bottom:16px}
+.hero h1{font-family:var(--serif);font-size:clamp(46px,7vw,82px);line-height:1.08;font-weight:500;letter-spacing:-2px;margin-bottom:22px}
+.hero p{max-width:560px;font-size:15px;color:#4e5048;margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 23px;background:var(--dark);color:white;font-size:11px;font-weight:800;letter-spacing:.7px;border:1px solid var(--dark);transition:.25s}
+.btn:hover{background:transparent;color:var(--dark)}
+.btn-outline{background:transparent;color:var(--dark);margin-left:8px}
+.btn-outline:hover{background:var(--dark);color:white}
+
+section{padding:92px 0}
+.section-head{max-width:760px;margin-bottom:42px}
+.section-title{font-family:var(--serif);font-weight:500;font-size:clamp(34px,5vw,53px);line-height:1.18}
+.section-desc{color:var(--muted);margin-top:15px;font-size:14px}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center}
+.about-photo{min-height:470px;background:url('https://tirshilik-tynysy.kz/uploads/posts/2025-10/1761025598_bcf9bb32-ea90-488a-9be9-22e956e9e512.jpeg') center/cover no-repeat;position:relative}
+.about-photo:after{content:"РОЗА-ВВК · С 1991 ГОДА";position:absolute;bottom:18px;left:18px;background:rgba(36,39,32,.82);color:white;padding:10px 14px;font-size:9px;letter-spacing:2px}
+.about-text p{font-size:13px;color:var(--muted);margin:16px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.stat{border-top:1px solid var(--line);padding-top:14px}
+.stat strong{display:block;font-family:var(--serif);font-size:30px;font-weight:500}
+.stat span{font-size:10px;color:var(--muted)}
+
+.history{background:var(--paper)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.timeline-item{padding:25px 22px;border:1px solid var(--line);background:var(--bg);min-height:190px}
+.timeline-item .year{font-family:var(--serif);font-size:31px;color:var(--accent)}
+.timeline-item h3{font-size:14px;margin:8px 0}
+.timeline-item p{font-size:11px;color:var(--muted)}
+
+.facts{background:#e9e4da}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{background:var(--paper);padding:24px}
+.fact strong{font-family:var(--serif);font-size:30px;font-weight:500;display:block}
+.fact span{font-size:11px;color:var(--muted)}
+
+.products{background:var(--paper)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product-card{background:var(--bg);transition:transform .25s;overflow:hidden}
+.product-card:hover{transform:translateY(-5px)}
+.product-card img{width:100%;height:220px;object-fit:cover;display:block}
+.product-info{padding:22px}
+.product-info h3{font-family:var(--serif);font-size:22px;font-weight:500}
+.product-info p{font-size:12px;color:var(--muted);margin-top:8px}
+.product-list{margin-top:26px;padding:24px;border:1px solid var(--line);background:var(--bg)}
+.product-list p{font-size:13px;color:var(--muted)}
+
+.production{background:#292c26;color:white}
+.production .section-desc{color:#b6b5ac}
+.production-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.production-card{min-height:205px;padding:28px;border:1px solid #55574f;background:linear-gradient(145deg,#343830,#242720)}
+.production-card span{font-family:var(--serif);font-size:30px;color:#c0a782}
+.production-card h3{margin:14px 0 8px;font-size:16px}
+.production-card p{font-size:12px;color:#b6b5ac}
+
+.gallery{background:var(--bg)}
+.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:16px}
+.gallery figure{position:relative;min-height:250px;overflow:hidden;background:#ddd}
+.gallery img{width:100%;height:100%;min-height:250px;object-fit:cover;display:block;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+
+.cooperation{background:#e9e4da}
+.cooperation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.country-card{background:var(--paper);padding:26px 20px;border:1px solid #ddd5c8;text-align:center;transition:transform .25s}
+.country-card:hover{transform:translateY(-5px)}
+.country-flag{font-size:42px;line-height:1.3;margin-bottom:12px}
+.country-card h3{font-family:var(--serif);font-size:21px;font-weight:500}
+.country-card p{font-size:11px;color:var(--muted);margin-top:5px}
+
+.awards{background:var(--paper)}
+.awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.award{padding:28px;border:1px solid var(--line);background:var(--bg);min-height:230px}
+.award .year{font-family:var(--serif);font-size:42px;color:var(--accent)}
+.award h3{font-size:16px;margin:8px 0}
+.award p{color:var(--muted);font-size:12px}
+.award a{display:inline-block;margin-top:13px;font-size:10px;font-weight:800;border-bottom:1px solid var(--accent);padding-bottom:3px}
+
+.development{background:#e9e4da}
+.development-box{background:var(--paper);padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.development-box p{font-size:13px;color:var(--muted);margin-top:12px}
+.development-box strong{color:var(--dark)}
+
+.contact{background:#e9e4da}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact-info{margin-top:28px}
+.contact-item{padding:17px 0;border-bottom:1px solid #d2cabb}
+.contact-item span{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+.contact-item strong{font-size:14px}
+.contact-item a:hover{color:var(--accent)}
+.contact-note{padding:32px;background:var(--paper)}
+.contact-note h3{font-family:var(--serif);font-size:29px;font-weight:500;margin-bottom:12px}
+.contact-note p{color:var(--muted);font-size:13px;margin-bottom:22px}
+
+footer{background:#242720;color:white;padding:38px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+footer p{color:#aaa99f;font-size:11px}
+footer .logo span{color:#aaa99f}
+.source-note{font-size:10px;color:var(--muted);margin-top:24px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:900px){
+.nav-links{gap:12px;font-size:10px}
+.about-grid,.contact-grid{gap:30px}
+.timeline{grid-template-columns:repeat(2,1fr)}
+.facts-grid{grid-template-columns:repeat(2,1fr)}
+.cooperation-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:700px){
+.nav-links{display:none;position:absolute;top:78px;left:0;right:0;padding:22px 5%;background:var(--bg);flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
+.nav-links.open{display:flex}
+.menu-btn{display:block}
+.nav{gap:10px}
+.logo{font-size:18px}
+.hero{min-height:550px;background-position:58% center}
+.hero-inner{padding:78px 0}
+.hero h1{font-size:48px}
+.about-grid,.contact-grid,.development-box{grid-template-columns:1fr}
+.about-photo{min-height:300px}
+.product-grid,.production-grid,.awards-grid{grid-template-columns:1fr 1fr}
+.gallery-grid{grid-template-columns:1fr 1fr}
+.gallery figure:first-child{grid-column:span 2}
+.stats{gap:8px}
+.stat strong{font-size:25px}
+}
+
+@media(max-width:500px){
+section{padding:68px 0}
+.product-grid,.production-grid,.awards-grid,.timeline,.facts-grid,.gallery-grid{grid-template-columns:1fr}
+.gallery figure:first-child{grid-column:auto}
+.cooperation-grid{grid-template-columns:1fr 1fr}
+.gallery img,.gallery figure{min-height:220px}
+.btn-outline{margin:10px 0 0}
+.footer-inner{flex-direction:column;align-items:flex-start}
+.right-nav{gap:4px}
+.lang{padding:6px 7px}
+.development-box{padding:24px}
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#home">РОЗА-ВВК<span>WOOL & FELT MANUFACTURING</span></a>
+
+<nav class="nav-links" id="navLinks">
+<a href="#home" data-i18n="navHome">Главная</a>
+<a href="#about" data-i18n="navAbout">О компании</a>
+<a href="#history" data-i18n="navHistory">История</a>
+<a href="#products" data-i18n="navProducts">Продукция</a>
+<a href="#production" data-i18n="navProduction">Производство</a>
+<a href="#awards" data-i18n="navAwards">Награды</a>
+<a href="#cooperation" data-i18n="navCooperation">Сотрудничество</a>
+<a href="#contacts" data-i18n="navContacts">Контакты</a>
+</nav>
+
+<div class="right-nav">
+<button class="lang active" data-lang="ru">RU</button>
+<button class="lang" data-lang="kz">KZ</button>
+<button class="lang" data-lang="en">EN</button>
+<button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+</div>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container hero-inner">
+<div class="eyebrow" data-i18n="heroEyebrow">Семей · Казахстан · С 1991 года</div>
+<h1 data-i18n="heroTitle">Традиции<br>натурального<br>войлока.</h1>
+<p data-i18n="heroText">ТОО «Роза-валяльно-войлочный комбинат» — предприятие по переработке овечьей шерсти и производству войлока, валенок и других изделий.</p>
+<a href="#products" class="btn" data-i18n="heroButton">Наша продукция →</a>
+<a href="#about" class="btn btn-outline" data-i18n="heroMore">О компании</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container about-grid">
+<div class="about-photo reveal" role="img" aria-label="Фотография предприятия Роза-ВВК"></div>
+
+<div class="about-text reveal">
+<div class="section-tag" data-i18n="aboutTag">О предприятии</div>
+<h2 class="section-title" data-i18n="aboutTitle">Опыт, проверенный временем</h2>
+<p data-i18n="aboutP1">ТОО «Роза-валяльно-войлочный комбинат» — частное предприятие в городе Семей, основанное в ноябре 1991 года. Основное направление деятельности — переработка овечьей шерсти и выпуск войлока, валяной обуви и других изделий.</p>
+<p data-i18n="aboutP2">Предприятие работает с сырьём, поступающим от крестьянских и фермерских хозяйств области Абай. Продукция ориентирована на потребителей внутри Казахстана.</p>
+
+<div class="stats">
+<div class="stat"><strong>1991</strong><span data-i18n="stat1">Год основания</span></div>
+<div class="stat"><strong>12 000</strong><span data-i18n="stat2">м² общая площадь</span></div>
+<div class="stat"><strong>~35</strong><span data-i18n="stat3">Сотрудников</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="history" id="history">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="historyTag">Путь предприятия</div>
+<h2 class="section-title" data-i18n="historyTitle">История и развитие</h2>
+<p class="section-desc" data-i18n="historyDesc">От основания в Семее до планов модернизации производства.</p>
+</div>
+
+<div class="timeline">
+<article class="timeline-item reveal">
+<div class="year">1991</div>
+<h3 data-i18n="timeline1Title">Основание комбината</h3>
+<p data-i18n="timeline1Text">В ноябре 1991 года в Семее начинает работу ТОО «Роза-валяльно-войлочный комбинат».</p>
+</article>
+
+<article class="timeline-item reveal">
+<div class="year">2018</div>
+<h3 data-i18n="timeline2Title">Премия «Іскер»</h3>
+<p data-i18n="timeline2Text">Предприятие отмечено специальной региональной премией за успехи в развитии производства.</p>
+</article>
+
+<article class="timeline-item reveal">
+<div class="year">2019–2022</div>
+<h3 data-i18n="timeline3Title">Признание качества</h3>
+<p data-i18n="timeline3Text">Награда «Алтын Сапа» в 2019 году и третье место в региональном конкурсе «Лучший товар Казахстана» в 2022 году.</p>
+</article>
+
+<article class="timeline-item reveal">
+<div class="year">2025–2027</div>
+<h3 data-i18n="timeline4Title">Новый этап</h3>
+<p data-i18n="timeline4Text">Показатель произведённой продукции за 2025 год — 150 млн тенге. На 2026 год запланирована реконструкция и обновление оборудования.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="facts">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="factsTag">Предприятие в цифрах</div>
+<h2 class="section-title" data-i18n="factsTitle">Производственные показатели</h2>
+</div>
+
+<div class="facts-grid">
+<div class="fact reveal"><strong>до 2 000 т</strong><span data-i18n="fact1">Проектная мощность в год</span></div>
+<div class="fact reveal"><strong>12 000 м²</strong><span data-i18n="fact2">Общая площадь предприятия</span></div>
+<div class="fact reveal"><strong>150 млн ₸</strong><span data-i18n="fact3">Объём произведённой продукции в 2025 году</span></div>
+<div class="fact reveal"><strong>около 35</strong><span data-i18n="fact4">Сотрудников</span></div>
+</div>
+</div>
+</section>
+
 <section class="gallery">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag" data-i18n="galleryTag">Традиции и изделия</div>
-      <h2 class="section-title" data-i18n="galleryTitle">
-        Валенки, юрты и казахские орнаменты
-      </h2>
-    </div>
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="galleryTag">Традиции и изделия</div>
+<h2 class="section-title" data-i18n="galleryTitle">Валенки, юрты и казахские орнаменты</h2>
+</div>
 
-    <div class="gallery-grid">
-      <figure>
-        <img
-          src="https://valenkiopt.ru/img/800x0/12949/items/valenki-iz-natural-noy-ovech-ey-shersti-belye-001zh-1_1778581486.png"
-          alt="Валенки из натуральной шерсти"
-        >
-      </figure>
-
-      <figure>
-        <img
-          src="https://www.passionforum.ru/uploads/images/00/20/15/2014/03/20/0d2468.jpg"
-          alt="Традиционная казахская юрта"
-        >
-      </figure>
-
-      <figure>
-        <img
-          src="https://vkoem.kz/images/stories/content/2021/raxatova-kiz-basu-dstrl-olner/6.jpg"
-          alt="Казахский орнамент на войлоке"
-        >
-      </figure>
-    </div>
-  </div>
+<div class="gallery-grid">
+<figure class="reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://valenkiopt.ru/img/800x0/12949/upload/382_17757704686084.png" alt="Валенки из натуральной овечьей шерсти">
+</figure>
+<figure class="reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://www.mykyrgyzstanstay.com/storage/858564/conversions/yurt-camps-open-a-stay-by-stay-guide-to-the-2026-song-kul-season-og.webp" alt="Войлочные изделия и интерьер юрты">
+</figure>
+<figure class="reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://api.ust.kz/storage/files/materials/docx/image/2022/november/d23/1669209293_html_af87b51965e94a9e.jpg" alt="Изготовление войлочного ковра с казахским орнаментом">
+</figure>
+</div>
+</div>
 </section>
 
-<!-- Our products -->
 <section class="products" id="products">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-tag" data-i18n="productsTag">Ассортимент</div>
-      <h2 class="section-title" data-i18n="productsTitle">
-        Наша продукция
-      </h2>
-      <p class="section-desc" data-i18n="productsDesc">
-        Комбинат выпускает широкий ассортимент изделий из натуральной овечьей шерсти.
-      </p>
-    </div>
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="productsTag">Ассортимент</div>
+<h2 class="section-title" data-i18n="productsTitle">Продукция предприятия</h2>
+<p class="section-desc" data-i18n="productsDesc">Комбинат выпускает широкий ассортимент изделий из натуральной овечьей шерсти.</p>
+</div>
 
-    <div class="product-grid">
-      <!-- Карточки продукции остаются здесь -->
-    </div>
-  </div>
+<div class="product-grid">
+<article class="product-card reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://valenkiopt.ru/img/800x0/12949/upload/382_17757704686084.png" alt="Производство валенок">
+<div class="product-info">
+<h3 data-i18n="product1">Валенки</h3>
+<p data-i18n="product1Desc">Серые, цветные, чёрные и обрезиненные валенки из натуральной шерсти.</p>
+</div>
+</article>
+
+<article class="product-card reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://img.inform.kz/kazinform-photobank/media/2026-03-22/1ae66d86-2a4a-4a1f-a3da-4b41990eebdf.jpeg" alt="Изготовление изделий из войлока">
+<div class="product-info">
+<h3 data-i18n="product2">Войлок</h3>
+<p data-i18n="product2Desc">Юртовый, технический, авиационный и обувной войлок разных цветов.</p>
+</div>
+</article>
+
+<article class="product-card reveal">
+<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://api.ust.kz/storage/files/materials/docx/image/2022/november/d23/1669209293_html_af87b51965e94a9e.jpg" alt="Обработка войлочной обуви">
+<div class="product-info">
+<h3 data-i18n="product3">Войлочная обувь</h3>
+<p data-i18n="product3Desc">Рабочая обувь, войлочные чулки и бахилы.</p>
+</div>
+</article>
+</div>
+
+<div class="product-list reveal">
+<p data-i18n="productMore">В ассортимент также входят стельки, подкапотники для легковых автомобилей и внедорожников, а также другие изделия из войлока.</p>
+</div>
+</div>
 </section>
+
+<section class="production" id="production">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="productionTag">Технологии и традиции</div>
+<h2 class="section-title" data-i18n="productionTitle">Как рождается войлок</h2>
+<p class="section-desc" data-i18n="productionDesc">Валяние — многоэтапный процесс, в котором важны подготовка шерсти, тепло, влага, давление и мастерство.</p>
+</div>
+
+<div class="production-grid">
+<article class="production-card reveal">
+<span>01</span>
+<h3 data-i18n="prod1Title">Подготовка шерсти</h3>
+<p data-i18n="prod1Desc">Шерсть заготавливают, сортируют и подготавливают к дальнейшей обработке.</p>
+</article>
+
+<article class="production-card reveal">
+<span>02</span>
+<h3 data-i18n="prod2Title">Формирование полотна</h3>
+<p data-i18n="prod2Desc">Шерсть равномерно раскладывают слоями на основе или циновке.</p>
+</article>
+
+<article class="production-card reveal">
+<span>03</span>
+<h3 data-i18n="prod3Title">Валяние и уплотнение</h3>
+<p data-i18n="prod3Desc">Материал увлажняют горячей водой, уплотняют и обрабатывают до получения войлока.</p>
+</article>
+</div>
+
+<p class="source-note" data-i18n="traditionNote">Историческая справка: в казахском быту войлок использовали для покрытия юрт, изготовления предметов интерьера, одежды и обуви.</p>
+</div>
+</section>
+
+<section class="cooperation" id="cooperation">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="cooperationTag">Международные связи</div>
+<h2 class="section-title" data-i18n="cooperationTitle">География сотрудничества</h2>
+<p class="section-desc" data-i18n="cooperationDesc">Страны, с которыми сотрудничает предприятие.</p>
+</div>
+
+<div class="cooperation-grid">
+<article class="country-card reveal"><div class="country-flag" aria-hidden="true">🇷🇺</div><h3 data-i18n="countryRussia">Россия</h3></article>
+<article class="country-card reveal"><div class="country-flag" aria-hidden="true">🇨🇳</div><h3 data-i18n="countryChina">Китай</h3></article>
+<article class="country-card reveal"><div class="country-flag" aria-hidden="true">🇺🇿</div><h3 data-i18n="countryUzbekistan">Узбекистан</h3></article>
+<article class="country-card reveal"><div class="country-flag" aria-hidden="true">🇰🇬</div><h3 data-i18n="countryKyrgyzstan">Кыргызстан</h3></article>
+</div>
+</div>
+</section>
+
+<section class="awards" id="awards">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="awardsTag">Достижения</div>
+<h2 class="section-title" data-i18n="awardsTitle">Награды и признание</h2>
+<p class="section-desc" data-i18n="awardsDesc">Награды и результаты, указанные в предоставленных материалах о предприятии.</p>
+</div>
+
+<div class="awards-grid">
+<article class="award reveal">
+<div class="year">2018</div>
+<h3 data-i18n="award1">Специальная премия «Іскер»</h3>
+<p data-i18n="award1Desc">Награда Национальной палаты предпринимателей «Атамекен» Восточно-Казахстанской области за успехи в развитии производства.</p>
+<a href="https://altynsapa.kz/ru/our-awards" target="_blank" rel="noopener" data-i18n="awardLink">Подробнее →</a>
+</article>
+
+<article class="award reveal">
+<div class="year">2019</div>
+<h3 data-i18n="award2">Премия Президента РК «Алтын Сапа»</h3>
+<p data-i18n="award2Desc">Победа в номинации «Лучшее предприятие, выпускающее товары для населения» среди субъектов малого предпринимательства.</p>
+<a href="https://altynsapa.kz/ru/node/262" target="_blank" rel="noopener" data-i18n="awardLink">Подробнее о премии →</a>
+</article>
+
+<article class="award reveal">
+<div class="year">2022</div>
+<h3 data-i18n="award3">«Лучший товар Казахстана»</h3>
+<p data-i18n="award3Desc">3-е место в региональном конкурсе в номинации «Лучшие товары для населения».</p>
+<a href="https://inbusiness.kz/ru/last/valyalno-vojlochnyj-kombinat-v-vostochnom-kazahstane-namere" target="_blank" rel="noopener" data-i18n="awardLink">Читать публикацию →</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="development">
+<div class="container">
+<div class="section-head reveal">
+<div class="section-tag" data-i18n="developmentTag">Будущее предприятия</div>
+<h2 class="section-title" data-i18n="developmentTitle">Модернизация и развитие</h2>
+</div>
+
+<div class="development-box reveal">
+<div>
+<h3 data-i18n="developmentSubtitle">Планы на 2026–2027 годы</h3>
+<p data-i18n="developmentText">В 2026 году запланирована полная реконструкция завода и закупка в Российской Федерации специализированного оборудования для нанесения резинового покрытия на валенки. Проект направлен на обновление производственных мощностей, совершенствование процессов и повышение качества продукции.</p>
+</div>
+
+<div>
+<h3 data-i18n="investmentTitle">Инвестиционный проект</h3>
+<p><strong>100 млн ₸</strong></p>
+<p data-i18n="investmentText">Объём инвестиций, предусмотренный проектом модернизации предприятия.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contacts">
+<div class="container contact-grid">
+<div class="reveal">
+<div class="section-tag" data-i18n="contactTag">Свяжитесь с нами</div>
+<h2 class="section-title" data-i18n="contactTitle">Будем рады вашему обращению</h2>
+
+<div class="contact-info">
+<div class="contact-item">
+<span data-i18n="addressLabel">Адрес</span>
+<strong><a data-i18n="address" href="https://maps.app.goo.gl/dL7znEKUyCtg8QFSA" target="_blank" rel="noopener">ул. Шугаева, 153, Семей, Казахстан</a></strong>
+</div>
+
+<div class="contact-item">
+<span data-i18n="phoneLabel">Телефон</span>
+<strong><a href="tel:+77477003223">+7 747 700 32 23</a></strong>
+</div>
+
+<div class="contact-item">
+<span data-i18n="emailLabel">Электронная почта</span>
+<strong><a href="mailto:too.roza.vvk@gmail.com">too.roza.vvk@gmail.com</a></strong>
+</div>
+</div>
+</div>
+
+<div class="contact-note reveal">
+<h3 data-i18n="contactBoxTitle">Сотрудничество</h3>
+<p data-i18n="contactBoxText">Хотите узнать больше о продукции, условиях сотрудничества или производстве? Свяжитесь с нами.</p>
+<a href="mailto:too.roza.vvk@gmail.com" class="btn" data-i18n="contactButton">Написать нам →</a>
+<a href="tel:+77477003223" class="btn btn-outline" data-i18n="callButton">Позвонить</a>
+<p style="margin-top:22px">
+<a href="https://maps.app.goo.gl/dL7znEKUyCtg8QFSA" target="_blank" rel="noopener" class="product-link" data-i18n="mapButton">ПОСМОТРЕТЬ НА КАРТЕ →</a>
+</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-inner">
+<div class="logo">РОЗА-ВВК<span>WOOL & FELT MANUFACTURING</span></div>
+<p>© <span id="year"></span> РОЗА-ВВК. <span data-i18n="copyright">Все права защищены.</span></p>
+</div>
+</footer>
+
+<script>
+const translations = {
+ru:{
+navHome:"Главная",navAbout:"О компании",navHistory:"История",navProducts:"Продукция",navProduction:"Производство",navAwards:"Награды",navCooperation:"Сотрудничество",navContacts:"Контакты",
+heroEyebrow:"Семей · Казахстан · С 1991 года",heroTitle:"Традиции<br>натурального<br>войлока.",heroText:"ТОО «Роза-валяльно-войлочный комбинат» — предприятие по переработке овечьей шерсти и производству войлока, валенок и других изделий.",heroButton:"Наша продукция →",heroMore:"О компании",
+aboutTag:"О предприятии",aboutTitle:"Опыт, проверенный временем",aboutP1:"ТОО «Роза-валяльно-войлочный комбинат» — частное предприятие в городе Семей, основанное в ноябре 1991 года. Основное направление деятельности — переработка овечьей шерсти и выпуск войлока, валяной обуви и других изделий.",aboutP2:"Предприятие работает с сырьём, поступающим от крестьянских и фермерских хозяйств области Абай. Продукция ориентирована на потребителей внутри Казахстана.",stat1:"Год основания",stat2:"м² общая площадь",stat3:"Сотрудников",
+historyTag:"Путь предприятия",historyTitle:"История и развитие",historyDesc:"От основания в Семее до планов модернизации производства.",timeline1Title:"Основание комбината",timeline1Text:"В ноябре 1991 года в Семее начинает работу ТОО «Роза-валяльно-войлочный комбинат».",timeline2Title:"Премия «Іскер»",timeline2Text:"Предприятие отмечено специальной региональной премией за успехи в развитии производства.",timeline3Title:"Признание качества",timeline3Text:"Награда «Алтын Сапа» в 2019 году и третье место в региональном конкурсе «Лучший товар Казахстана» в 2022 году.",timeline4Title:"Новый этап",timeline4Text:"Показатель произведённой продукции за 2025 год — 150 млн тенге. На 2026 год запланирована реконструкция и обновление оборудования.",
+factsTag:"Предприятие в цифрах",factsTitle:"Производственные показатели",fact1:"Проектная мощность в год",fact2:"Общая площадь предприятия",fact3:"Объём произведённой продукции в 2025 году",fact4:"Сотрудников",
+productsTag:"Ассортимент",productsTitle:"Продукция предприятия",productsDesc:"Комбинат выпускает широкий ассортимент изделий из натуральной овечьей шерсти.",product1:"Валенки",product1Desc:"Серые, цветные, чёрные и обрезиненные валенки из натуральной шерсти.",product2:"Войлок",product2Desc:"Юртовый, технический, авиационный и обувной войлок разных цветов.",product3:"Войлочная обувь",product3Desc:"Рабочая обувь, войлочные чулки и бахилы.",productMore:"В ассортимент также входят стельки, подкапотники для легковых автомобилей и внедорожников, а также другие изделия из войлока.",
+productionTag:"Технологии и традиции",productionTitle:"Как рождается войлок",productionDesc:"Валяние — многоэтапный процесс, в котором важны подготовка шерсти, тепло, влага, давление и мастерство.",prod1Title:"Подготовка шерсти",prod1Desc:"Шерсть заготавливают, сортируют и подготавливают к дальнейшей обработке.",prod2Title:"Формирование полотна",prod2Desc:"Шерсть равномерно раскладывают слоями на основе или циновке.",prod3Title:"Валяние и уплотнение",prod3Desc:"Материал увлажняют горячей водой, уплотняют и обрабатывают до получения войлока.",traditionNote:"Историческая справка: в казахском быту войлок использовали для покрытия юрт, изготовления предметов интерьера, одежды и обуви.",
+galleryTag:"Традиции и изделия",galleryTitle:"Валенки, юрты и казахские орнаменты",gallery1:"Валенки из натуральной шерсти",gallery2:"Традиционная казахская юрта",gallery3:"Казахский орнамент на войлоке",cooperationTag:"Международные связи",cooperationTitle:"География сотрудничества",cooperationDesc:"Страны, с которыми сотрудничает предприятие.",countryRussia:"Россия",countryChina:"Китай",countryUzbekistan:"Узбекистан",countryKyrgyzstan:"Кыргызстан",
+awardsTag:"Достижения",awardsTitle:"Награды и признание",awardsDesc:"Награды и результаты, указанные в предоставленных материалах о предприятии.",award1:"Специальная премия «Іскер»",award1Desc:"Награда Национальной палаты предпринимателей «Атамекен» Восточно-Казахстанской области за успехи в развитии производства.",award2:"Премия Президента РК «Алтын Сапа»",award2Desc:"Победа в номинации «Лучшее предприятие, выпускающее товары для населения» среди субъектов малого предпринимательства.",award3:"«Лучший товар Казахстана»",award3Desc:"3-е место в региональном конкурсе в номинации «Лучшие товары для населения».",awardLink:"Подробнее →",
+developmentTag:"Будущее предприятия",developmentTitle:"Модернизация и развитие",developmentSubtitle:"Планы на 2026–2027 годы",developmentText:"В 2026 году запланирована полная реконструкция завода и закупка в Российской Федерации специализированного оборудования для нанесения резинового покрытия на валенки. Проект направлен на обновление производственных мощностей, совершенствование процессов и повышение качества продукции.",investmentTitle:"Инвестиционный проект",investmentText:"Объём инвестиций, предусмотренный проектом модернизации предприятия.",
+contactTag:"Свяжитесь с нами",contactTitle:"Будем рады вашему обращению",addressLabel:"Адрес",address:"ул. Шугаева, 153, Семей, Казахстан",phoneLabel:"Телефон",emailLabel:"Электронная почта",contactBoxTitle:"Сотрудничество",contactBoxText:"Хотите узнать больше о продукции, условиях сотрудничества или производстве? Свяжитесь с нами.",contactButton:"Написать нам →",callButton:"Позвонить",mapButton:"ПОСМОТРЕТЬ НА КАРТЕ →",copyright:"Все права защищены."
+},
+
+kz:{
+navHome:"Басты бет",navAbout:"Компания туралы",navHistory:"Тарихы",navProducts:"Өнімдер",navProduction:"Өндіріс",navAwards:"Марапаттар",navCooperation:"Ынтымақтастық",navContacts:"Байланыс",
+heroEyebrow:"Семей · Қазақстан · 1991 жылдан бері",heroTitle:"Табиғи киіз<br>өндіру дәстүрі.",heroText:"«Роза-киіз басу комбинаты» ЖШС — қой жүнін өңдеп, киіз, пима және басқа да жүн бұйымдарын өндіретін кәсіпорын.",heroButton:"Өнімдеріміз →",heroMore:"Компания туралы",
+aboutTag:"Кәсіпорын туралы",aboutTitle:"Уақытпен дәлелденген тәжірибе",aboutP1:"«Роза-киіз басу комбинаты» ЖШС — 1991 жылдың қараша айында құрылған Семей қаласындағы жеке кәсіпорын. Негізгі қызметі — қой жүнін өңдеу, киіз, киіз аяқ киім және басқа да бұйымдар өндіру.",aboutP2:"Кәсіпорын Абай облысындағы шаруа және фермер қожалықтарынан жеткізілетін шикізатты пайдаланады. Өнімдері Қазақстан нарығына бағытталған.",stat1:"Құрылған жылы",stat2:"м² жалпы аумағы",stat3:"Қызметкер",
+historyTag:"Кәсіпорын жолы",historyTitle:"Тарихы және дамуы",historyDesc:"Семейде құрылған күннен бастап өндірісті жаңғырту жоспарларына дейін.",timeline1Title:"Комбинаттың құрылуы",timeline1Text:"1991 жылғы қарашада Семей қаласында «Роза-киіз басу комбинаты» ЖШС жұмысын бастады.",timeline2Title:"«Іскер» сыйлығы",timeline2Text:"Кәсіпорын өндірісті дамытудағы жетістіктері үшін арнайы өңірлік марапатқа ие болды.",timeline3Title:"Сапаның мойындалуы",timeline3Text:"2019 жылы «Алтын Сапа» марапаты және 2022 жылы «Қазақстанның үздік тауары» өңірлік байқауында үшінші орын.",timeline4Title:"Жаңа кезең",timeline4Text:"2025 жылы өндірілген өнім көлемі — 150 млн теңге. 2026 жылы зауытты қайта жаңарту және жабдықтарды жаңарту жоспарланған.",
+factsTag:"Кәсіпорын сандармен",factsTitle:"Өндірістік көрсеткіштер",fact1:"Жылдық жобалық қуаты",fact2:"Кәсіпорынның жалпы аумағы",fact3:"2025 жылы өндірілген өнім көлемі",fact4:"Қызметкер",
+productsTag:"Өнім түрлері",productsTitle:"Кәсіпорын өнімдері",productsDesc:"Комбинат табиғи қой жүнінен жасалған өнімдердің кең ассортиментін шығарады.",product1:"Пима",product1Desc:"Табиғи жүннен жасалған сұр, түрлі түсті, қара және резеңке табанды пималар.",product2:"Киіз",product2Desc:"Киіз үйге арналған, техникалық, авиациялық және аяқ киімдік түрлі түсті киіз.",product3:"Киіз аяқ киім",product3Desc:"Жұмыс аяқ киімі, киіз шұлықтар және бахилалар.",productMore:"Ассортиментке ұлтарақтар, жеңіл автомобильдер мен жол талғамайтын көліктерге арналған капот астарлары және басқа да киіз бұйымдары кіреді.",
+productionTag:"Технология және дәстүр",productionTitle:"Киіз қалай жасалады",productionDesc:"Киіз басу — жүнді дайындау, жылу, ылғал, қысым және шеберлікті қажет ететін бірнеше кезеңнен тұратын үдеріс.",prod1Title:"Жүнді дайындау",prod1Desc:"Жүн жиналып, сұрыпталып, келесі өңдеу кезеңіне дайындалады.",prod2Title:"Жүнді төсеу",prod2Desc:"Жүн негізге немесе ши үстіне біркелкі қабаттап жайылады.",prod3Title:"Киіз басу және нығыздау",prod3Desc:"Материал ыстық сумен ылғалдандырылып, нығыздалып, киізге айналады.",traditionNote:"Тарихи мәлімет: қазақ тұрмысында киіз киіз үйді жабуға, үй ішін безендіруге, киім мен аяқ киім жасауға қолданылған.",
+galleryTag:"Дәстүр мен өнімдер",galleryTitle:"Пима, киіз үй және қазақ ою-өрнектері",gallery1:"Табиғи жүннен жасалған пима",gallery2:"Дәстүрлі қазақ киіз үйі",gallery3:"Киіздегі қазақ ою-өрнегі",cooperationTag:"Халықаралық байланыстар",cooperationTitle:"Ынтымақтастық географиясы",cooperationDesc:"Кәсіпорын ынтымақтастық орнатқан елдер.",countryRussia:"Ресей",countryChina:"Қытай",countryUzbekistan:"Өзбекстан",countryKyrgyzstan:"Қырғызстан",
+awardsTag:"Жетістіктер",awardsTitle:"Марапаттар мен мойындау",awardsDesc:"Кәсіпорын туралы берілген материалдарда көрсетілген марапаттар мен нәтижелер.",award1:"«Іскер» арнайы сыйлығы",award1Desc:"«Атамекен» Ұлттық кәсіпкерлер палатасының Шығыс Қазақстан облыстық филиалынан өндірісті дамытудағы жетістіктері үшін берілген марапат.",award2:"ҚР Президентінің «Алтын Сапа» сыйлығы",award2Desc:"Шағын кәсіпкерлік субъектілері арасында «Халыққа арналған тауарлар шығаратын үздік кәсіпорын» номинациясының жеңімпазы.",award3:"«Қазақстанның үздік тауары»",award3Desc:"Өңірлік байқаудың «Халыққа арналған үздік тауарлар» номинациясында 3-орын.",awardLink:"Толығырақ →",
+developmentTag:"Кәсіпорын болашағы",developmentTitle:"Жаңғырту және даму",developmentSubtitle:"2026–2027 жылдарға арналған жоспарлар",developmentText:"2026 жылы зауытты толық қайта жаңарту және Ресей Федерациясынан пимаға резеңке табан жабыстыруға арналған арнайы жабдық сатып алу жоспарланған. Жоба өндірістік қуаттарды жаңартуға, үдерістерді жетілдіруге және өнім сапасын арттыруға бағытталған.",investmentTitle:"Инвестициялық жоба",investmentText:"Кәсіпорынды жаңғырту жобасы аясында қарастырылған инвестиция көлемі.",
+contactTag:"Бізбен байланысыңыз",contactTitle:"Сіздің хабарламаңызға қуаныштымыз",addressLabel:"Мекенжай",address:"Қазақстан, Семей қаласы, Шугаев көшесі, 153",phoneLabel:"Телефон",emailLabel:"Электрондық пошта",contactBoxTitle:"Ынтымақтастық",contactBoxText:"Өнімдер, ынтымақтастық шарттары немесе өндіріс туралы білгіңіз келе ме? Бізбен байланысыңыз.",contactButton:"Бізге жазыңыз →",callButton:"Қоңырау шалу",mapButton:"КАРТАДАН КӨРУ →",copyright:"Барлық құқықтар қорғалған."
+},
+
+en:{
+navHome:"Home",navAbout:"About us",navHistory:"History",navProducts:"Products",navProduction:"Production",navAwards:"Awards",navCooperation:"Cooperation",navContacts:"Contact",
+heroEyebrow:"Semey · Kazakhstan · Since 1991",heroTitle:"The tradition<br>of natural<br>felt.",heroText:"Roza Wool and Felt Mill LLP processes sheep wool and manufactures felt, felt boots and other wool products.",heroButton:"Our products →",heroMore:"About us",
+aboutTag:"About the company",aboutTitle:"Experience proven by time",aboutP1:"Roza Wool and Felt Mill LLP is a privately owned company in Semey, established in November 1991. Its main activity is sheep-wool processing and the production of felt, felt footwear and other wool products.",aboutP2:"The company works with raw materials supplied by peasant and farming enterprises in Abai Region. Its products are marketed within Kazakhstan.",stat1:"Year established",stat2:"m² total area",stat3:"Employees",
+historyTag:"Company journey",historyTitle:"History and development",historyDesc:"From its establishment in Semey to plans for production modernization.",timeline1Title:"Company established",timeline1Text:"Roza Wool and Felt Mill LLP began operating in Semey in November 1991.",timeline2Title:"Isker Award",timeline2Text:"The company received a special regional award for its achievements in developing production.",timeline3Title:"Recognition for quality",timeline3Text:"The Altyn Sapa award in 2019 and third place in the regional Best Product of Kazakhstan competition in 2022.",timeline4Title:"A new stage",timeline4Text:"The value of products manufactured in 2025 was KZT 150 million. A plant reconstruction and equipment upgrade are planned for 2026.",
+factsTag:"Company in numbers",factsTitle:"Production figures",fact1:"Designed annual capacity",fact2:"Total enterprise area",fact3:"Value of products manufactured in 2025",fact4:"Employees",
+productsTag:"Product range",productsTitle:"Our products",productsDesc:"The mill manufactures a wide range of products from natural sheep wool.",product1:"Felt boots",product1Desc:"Grey, coloured, black and rubber-soled felt boots made from natural wool.",product2:"Felt",product2Desc:"Yurt, technical, aviation and footwear felt in various colours.",product3:"Felt footwear",product3Desc:"Work footwear, felt socks and overshoes.",productMore:"The range also includes insoles, under-hood insulation for passenger cars and SUVs, and other felt products.",
+productionTag:"Technology and tradition",productionTitle:"How felt is made",productionDesc:"Felt making is a multi-stage process that requires wool preparation, heat, moisture, pressure and skill.",prod1Title:"Wool preparation",prod1Desc:"Wool is collected, sorted and prepared for further processing.",prod2Title:"Laying the fibres",prod2Desc:"Wool is spread evenly in layers on a base or mat.",prod3Title:"Felting and compaction",prod3Desc:"The material is moistened with hot water, compacted and worked into felt.",traditionNote:"Historical note: in Kazakh daily life, felt was used for yurt coverings, interior items, clothing and footwear.",
+galleryTag:"Tradition and products",galleryTitle:"Felt boots, yurts and Kazakh ornaments",gallery1:"Felt boots made from natural wool",gallery2:"Traditional Kazakh yurt",gallery3:"Kazakh ornament on felt",cooperationTag:"International connections",cooperationTitle:"Cooperation geography",cooperationDesc:"Countries with which the company cooperates.",countryRussia:"Russia",countryChina:"China",countryUzbekistan:"Uzbekistan",countryKyrgyzstan:"Kyrgyzstan",
+awardsTag:"Achievements",awardsTitle:"Awards and recognition",awardsDesc:"Awards and results listed in the materials provided about the company.",award1:"Special Isker Award",award1Desc:"An award from the Atameken National Chamber of Entrepreneurs in East Kazakhstan Region for achievements in production development.",award2:"President of Kazakhstan’s Altyn Sapa Award",award2Desc:"Winner in the Best Enterprise Producing Consumer Goods category among small businesses.",award3:"Best Product of Kazakhstan",award3Desc:"Third place in the regional competition in the Best Consumer Goods category.",awardLink:"Learn more →",
+developmentTag:"The company's future",developmentTitle:"Modernization and development",developmentSubtitle:"Plans for 2026–2027",developmentText:"A full plant reconstruction is planned for 2026, together with the purchase in the Russian Federation of specialized equipment for applying rubber soles to felt boots. The project is intended to modernize production facilities, improve processes and enhance product quality.",investmentTitle:"Investment project",investmentText:"The investment allocated for the company's modernization project.",
+contactTag:"Get in touch",contactTitle:"We look forward to hearing from you",addressLabel:"Address",address:"153 Shugaev Street, Semey, Kazakhstan",phoneLabel:"Phone",emailLabel:"Email",contactBoxTitle:"Cooperation",contactBoxText:"Would you like to learn more about our products, cooperation opportunities or manufacturing? Contact us.",contactButton:"Email us →",callButton:"Call us",mapButton:"VIEW ON MAP →",copyright:"All rights reserved."
+}
+};
+
+function setLanguage(lang){
+ const dict=translations[lang]||translations.ru;
+ document.documentElement.lang=lang;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+  const key=el.dataset.i18n;
+  if(dict[key]) el.innerHTML=dict[key];
+ });
+ document.querySelectorAll(".lang").forEach(btn=>btn.classList.toggle("active",btn.dataset.lang===lang));
+ try{localStorage.setItem("rozaLanguage",lang)}catch(e){}
+}
+
+document.querySelectorAll(".lang").forEach(btn=>btn.addEventListener("click",()=>setLanguage(btn.dataset.lang)));
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("open"));
+document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+document.getElementById("year").textContent=new Date().getFullYear();
+
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+ if(entry.isIntersecting){
+  entry.target.classList.add("visible");
+  observer.unobserve(entry.target);
+ }
+}),{threshold:.1});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+let saved="ru";
+try{saved=localStorage.getItem("rozaLanguage")||"ru"}catch(e){}
+setLanguage(saved);
+</script>
+</body>
+</html>
