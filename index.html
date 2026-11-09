@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f5f2eb">
-<meta name="description" content="РОЗА-ВВК — предприятие по производству изделий из натуральной шерсти и войлока в Казахстане.">
+<meta name="description" content="РОЗА-ВВК — производство изделий из натуральной шерсти и войлока. Семей, Казахстан. Телефон: +7 747 700 32 23.">
 <title>РОЗА-ВВК — Производство войлока</title>
 
 <style>
@@ -23,24 +23,16 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--bg);
   color: var(--dark);
   font-family: var(--sans);
   line-height: 1.65;
 }
-
 a { color: inherit; text-decoration: none; }
-
 button { font: inherit; cursor: pointer; }
-
-.container {
-  width: min(1160px, 90%);
-  margin: auto;
-}
+.container { width: min(1160px, 90%); margin: auto; }
 
 header {
   position: sticky;
@@ -50,7 +42,6 @@ header {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
 }
-
 .nav {
   min-height: 82px;
   display: flex;
@@ -58,13 +49,7 @@ header {
   justify-content: space-between;
   gap: 25px;
 }
-
-.logo {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
+.logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; }
 .logo span {
   display: block;
   color: var(--muted);
@@ -72,7 +57,6 @@ header {
   letter-spacing: 3px;
   font-weight: 500;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -80,15 +64,8 @@ header {
   font-size: 12px;
   font-weight: 700;
 }
-
 .nav-links a:hover { color: var(--accent); }
-
-.right-nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
+.right-nav { display: flex; align-items: center; gap: 12px; }
 .lang {
   border: 1px solid var(--line);
   background: transparent;
@@ -98,13 +75,11 @@ header {
   font-weight: 700;
   color: var(--dark);
 }
-
 .lang.active {
   background: var(--dark);
   color: white;
   border-color: var(--dark);
 }
-
 .menu-btn {
   display: none;
   border: 0;
@@ -122,7 +97,6 @@ header {
     radial-gradient(ellipse at 75% 40%, #c5b69e 0%, transparent 42%),
     linear-gradient(115deg, #e8e2d6 0%, #d5c9b5 55%, #a99a83 100%);
 }
-
 .hero::after {
   content: "";
   position: absolute;
@@ -137,14 +111,12 @@ header {
     0 0 0 80px rgba(255,255,255,.05),
     0 0 0 130px rgba(255,255,255,.04);
 }
-
 .hero-inner {
   position: relative;
   z-index: 2;
   max-width: 740px;
   padding: 110px 0;
 }
-
 .eyebrow {
   font-size: 10px;
   letter-spacing: 4px;
@@ -153,7 +125,6 @@ header {
   color: #75654f;
   margin-bottom: 25px;
 }
-
 .hero h1 {
   font-family: var(--serif);
   font-size: clamp(48px, 7vw, 86px);
@@ -162,14 +133,12 @@ header {
   letter-spacing: -2px;
   margin-bottom: 25px;
 }
-
 .hero p {
   max-width: 490px;
   font-size: 15px;
   color: #55564f;
   margin-bottom: 35px;
 }
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -183,30 +152,16 @@ header {
   border: 1px solid var(--dark);
   transition: .3s;
 }
-
-.btn:hover {
-  background: transparent;
-  color: var(--dark);
-}
-
+.btn:hover { background: transparent; color: var(--dark); }
 .btn-outline {
   background: transparent;
   color: var(--dark);
   margin-left: 10px;
 }
-
-.btn-outline:hover {
-  background: var(--dark);
-  color: white;
-}
+.btn-outline:hover { background: var(--dark); color: white; }
 
 section { padding: 105px 0; }
-
-.section-head {
-  max-width: 670px;
-  margin-bottom: 48px;
-}
-
+.section-head { max-width: 670px; margin-bottom: 48px; }
 .section-tag {
   font-size: 10px;
   font-weight: 800;
@@ -215,14 +170,12 @@ section { padding: 105px 0; }
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-
 .section-title {
   font-family: var(--serif);
   font-weight: 500;
   font-size: clamp(36px, 5vw, 55px);
   line-height: 1.2;
 }
-
 .section-desc {
   color: var(--muted);
   margin-top: 18px;
@@ -235,7 +188,6 @@ section { padding: 105px 0; }
   gap: 75px;
   align-items: center;
 }
-
 .about-art {
   min-height: 430px;
   background:
@@ -247,7 +199,6 @@ section { padding: 105px 0; }
   position: relative;
   overflow: hidden;
 }
-
 .about-art::before {
   content: "РОЗА";
   font-family: var(--serif);
@@ -255,7 +206,6 @@ section { padding: 105px 0; }
   color: rgba(255,255,255,.35);
   letter-spacing: 8px;
 }
-
 .about-art::after {
   content: "NATURAL WOOL";
   position: absolute;
@@ -265,52 +215,34 @@ section { padding: 105px 0; }
   letter-spacing: 4px;
   font-size: 9px;
 }
-
 .about-text p {
   font-size: 14px;
   color: var(--muted);
   margin: 20px 0;
 }
-
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 35px;
 }
-
-.stat {
-  border-top: 1px solid var(--line);
-  padding-top: 17px;
-}
-
+.stat { border-top: 1px solid var(--line); padding-top: 17px; }
 .stat strong {
   display: block;
   font-family: var(--serif);
   font-size: 35px;
   font-weight: 500;
 }
-
-.stat span {
-  color: var(--muted);
-  font-size: 10px;
-}
+.stat span { color: var(--muted); font-size: 10px; }
 
 .products { background: var(--paper); }
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.product-card {
-  background: var(--bg);
-  transition: transform .3s;
-}
-
+.product-card { background: var(--bg); transition: transform .3s; }
 .product-card:hover { transform: translateY(-6px); }
-
 .product-art {
   height: 235px;
   display: flex;
@@ -321,29 +253,23 @@ section { padding: 105px 0; }
   color: rgba(50,45,35,.45);
   background: linear-gradient(135deg, #ded5c6, #a99a82);
 }
-
 .product-card:nth-child(2) .product-art {
   background: linear-gradient(135deg, #e4e0d8, #aaa79c);
 }
-
 .product-card:nth-child(3) .product-art {
   background: linear-gradient(135deg, #c8b69a, #8c806e);
 }
-
 .product-info { padding: 25px; }
-
 .product-info h3 {
   font-family: var(--serif);
   font-size: 24px;
   font-weight: 500;
 }
-
 .product-info p {
   color: var(--muted);
   font-size: 12px;
   margin-top: 10px;
 }
-
 .product-link {
   display: inline-block;
   margin-top: 20px;
@@ -354,81 +280,57 @@ section { padding: 105px 0; }
   padding-bottom: 4px;
 }
 
-.production {
-  background: #292c26;
-  color: white;
-}
-
+.production { background: #292c26; color: white; }
 .production .section-desc { color: #b6b5ac; }
-
 .production-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 40px;
 }
-
 .production-card {
   min-height: 210px;
   padding: 30px;
   border: 1px solid #55574f;
   background: linear-gradient(145deg, #343830, #242720);
 }
-
 .production-card span {
   font-family: var(--serif);
   font-size: 32px;
   color: #c0a782;
 }
-
-.production-card h3 {
-  margin: 18px 0 10px;
-  font-size: 17px;
-}
-
-.production-card p {
-  font-size: 12px;
-  color: #b6b5ac;
-}
+.production-card h3 { margin: 18px 0 10px; font-size: 17px; }
+.production-card p { font-size: 12px; color: #b6b5ac; }
 
 .awards-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .award {
   padding: 35px;
   border: 1px solid var(--line);
   background: var(--paper);
 }
-
 .award .year {
   font-family: var(--serif);
   font-size: 43px;
   color: var(--accent);
 }
-
 .award h3 { margin: 12px 0; font-size: 17px; }
 .award p { color: var(--muted); font-size: 13px; }
 
-.contact {
-  background: #e9e4da;
-}
-
+.contact { background: #e9e4da; }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
 }
-
 .contact-info { margin-top: 35px; }
-
 .contact-item {
   padding: 20px 0;
   border-bottom: 1px solid #d2cabb;
 }
-
 .contact-item span {
   display: block;
   color: var(--muted);
@@ -437,21 +339,17 @@ section { padding: 105px 0; }
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-
 .contact-item strong { font-size: 15px; }
+.contact-item strong a { text-decoration: none; }
+.contact-item strong a:hover { color: var(--accent); }
 
-.contact-note {
-  padding: 35px;
-  background: var(--paper);
-}
-
+.contact-note { padding: 35px; background: var(--paper); }
 .contact-note h3 {
   font-family: var(--serif);
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-
 .contact-note p {
   color: var(--muted);
   font-size: 13px;
@@ -463,16 +361,13 @@ footer {
   color: white;
   padding: 45px 0;
 }
-
 .footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-
 footer p { color: #aaa99f; font-size: 11px; }
-
 footer .logo span { color: #aaa99f; }
 
 .reveal {
@@ -480,11 +375,7 @@ footer .logo span { color: #aaa99f; }
   transform: translateY(22px);
   transition: .7s ease;
 }
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
 @media(max-width: 850px) {
   .nav-links {
@@ -504,7 +395,6 @@ footer .logo span { color: #aaa99f; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 35px; }
   .product-grid, .production-grid { grid-template-columns: 1fr 1fr; }
 }
-
 @media(max-width: 560px) {
   section { padding: 75px 0; }
   .hero { min-height: 560px; }
@@ -524,7 +414,6 @@ footer .logo span { color: #aaa99f; }
 </head>
 
 <body>
-
 <header>
   <div class="container nav">
     <a class="logo" href="#home">
@@ -575,18 +464,9 @@ footer .logo span { color: #aaa99f; }
         Мы ценим качество натуральных материалов, производственный опыт и традиции обработки шерсти.
       </p>
       <div class="stats">
-        <div class="stat">
-          <strong>1991</strong>
-          <span data-i18n="stat1">Год основания</span>
-        </div>
-        <div class="stat">
-          <strong>Семей</strong>
-          <span data-i18n="stat2">Казахстан</span>
-        </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span data-i18n="stat3">Внимание к качеству</span>
-        </div>
+        <div class="stat"><strong>1991</strong><span data-i18n="stat1">Год основания</span></div>
+        <div class="stat"><strong>Семей</strong><span data-i18n="stat2">Казахстан</span></div>
+        <div class="stat"><strong>100%</strong><span data-i18n="stat3">Внимание к качеству</span></div>
       </div>
     </div>
   </div>
@@ -611,7 +491,6 @@ footer .logo span { color: #aaa99f; }
           <a class="product-link" href="#contacts" data-i18n="productLink">УЗНАТЬ БОЛЬШЕ →</a>
         </div>
       </article>
-
       <article class="product-card reveal">
         <div class="product-art">02</div>
         <div class="product-info">
@@ -620,7 +499,6 @@ footer .logo span { color: #aaa99f; }
           <a class="product-link" href="#contacts" data-i18n="productLink">УЗНАТЬ БОЛЬШЕ →</a>
         </div>
       </article>
-
       <article class="product-card reveal">
         <div class="product-art">03</div>
         <div class="product-info">
@@ -642,7 +520,6 @@ footer .logo span { color: #aaa99f; }
         В основе нашей работы — опыт, внимание к материалам и ответственное отношение к производству.
       </p>
     </div>
-
     <div class="production-grid">
       <article class="production-card reveal">
         <span>01</span>
@@ -668,11 +545,8 @@ footer .logo span { color: #aaa99f; }
     <div class="section-head reveal">
       <div class="section-tag" data-i18n="awardsTag">Наши достижения</div>
       <h2 class="section-title" data-i18n="awardsTitle">Признание и награды</h2>
-      <p class="section-desc" data-i18n="awardsDesc">
-        Достижения предприятия и признание качества его продукции.
-      </p>
+      <p class="section-desc" data-i18n="awardsDesc">Достижения предприятия и признание качества его продукции.</p>
     </div>
-
     <div class="awards-grid">
       <article class="award reveal">
         <div class="year">2019</div>
@@ -697,15 +571,15 @@ footer .logo span { color: #aaa99f; }
       <div class="contact-info">
         <div class="contact-item">
           <span data-i18n="addressLabel">Адрес</span>
-          <strong data-i18n="address">г. Семей, Казахстан, Шугаева, 153</strong>
+          <strong><a data-i18n="address" href="https://www.google.com/maps/search/?api=1&query=улица+Шугаева+153,+Семей,+Казахстан" target="_blank" rel="noopener">ул. Шугаева, 153, Семей, Казахстан</a></strong>
         </div>
         <div class="contact-item">
           <span data-i18n="phoneLabel">Телефон</span>
-          <strong data-i18n="phone">+77477003223</strong>
+          <strong><a data-i18n="phone" href="tel:+77477003223">+7 747 700 32 23</a></strong>
         </div>
         <div class="contact-item">
           <span data-i18n="emailLabel">Электронная почта</span>
-          <strong data-i18n="email">too.roza.vvk@gmail.com</strong>
+          <strong><a data-i18n="email" href="mailto:too.roza.vvk@gmail.com">too.roza.vvk@gmail.com</a></strong>
         </div>
       </div>
     </div>
@@ -716,8 +590,10 @@ footer .logo span { color: #aaa99f; }
         Хотите узнать больше о продукции, условиях сотрудничества или производстве? Свяжитесь с нами.
       </p>
       <a href="mailto:too.roza.vvk@gmail.com" class="btn" data-i18n="contactButton">Написать нам →</a>
-      <p style="font-size:10px;margin-top:15px" data-i18n="contactHint">
-        Перед публикацией замените адрес электронной почты на действующий адрес компании.
+      <a href="tel:+77477003223" class="btn btn-outline" data-i18n="callButton">Позвонить</a>
+      <p style="margin-top:22px">
+        <a href="https://www.google.com/maps/search/?api=1&query=улица+Шугаева+153,+Семей,+Казахстан"
+           target="_blank" rel="noopener" class="product-link" data-i18n="mapButton">ПОСМОТРЕТЬ НА КАРТЕ →</a>
       </p>
     </div>
   </div>
@@ -734,94 +610,100 @@ footer .logo span { color: #aaa99f; }
 <script>
 const translations = {
 ru: {
-navHome:"Главная",navAbout:"О компании",navProducts:"Продукция",navProduction:"Производство",navContacts:"Контакты",
-heroEyebrow:"Семей · Казахстан · С 1991 года",
-heroTitle:"Традиции<br>натурального<br>войлока.",
-heroText:"РОЗА-ВВК — предприятие, объединяющее опыт, качество и традиции производства изделий из натуральной шерсти.",
-heroButton:"Наша продукция →",heroMore:"О компании",
-aboutTag:"Наша история",aboutTitle:"Опыт, проверенный временем",
-aboutP1:"РОЗА-ВВК — производственное предприятие города Семей, Казахстан, специализирующееся на изделиях из натуральной шерсти и войлока.",
-aboutP2:"Мы ценим качество натуральных материалов, производственный опыт и традиции обработки шерсти.",
-stat1:"Год основания",stat2:"Казахстан",stat3:"Внимание к качеству",
-productsTag:"Наш ассортимент",productsTitle:"Продукция предприятия",
-productsDesc:"Натуральные материалы и изделия, созданные с использованием традиций войлочного производства.",
-product1:"Войлок",product1Desc:"Войлочные материалы для различных сфер применения.",
-product2:"Войлочная обувь",product2Desc:"Изделия из натуральной шерсти для комфорта и тепла.",
-product3:"Шерстяные изделия",product3Desc:"Продукция на основе натурального шерстяного сырья.",
-productLink:"УЗНАТЬ БОЛЬШЕ →",
-productionTag:"Наше дело",productionTitle:"Производство и качество",
-productionDesc:"В основе нашей работы — опыт, внимание к материалам и ответственное отношение к производству.",
-prod1Title:"Натуральное сырьё",prod1Desc:"Шерсть как основа традиционного войлочного производства.",
-prod2Title:"Производственный опыт",prod2Desc:"Многолетний опыт работы в сфере обработки шерсти.",
-prod3Title:"Внимание к качеству",prod3Desc:"Ответственный подход к производству продукции.",
-awardsTag:"Наши достижения",awardsTitle:"Признание и награды",awardsDesc:"Достижения предприятия и признание качества его продукции.",
-award1:"«Алтын Сапа»",award1Desc:"Премия Президента Республики Казахстан в области качества. Уточните номинацию и статус награды перед публикацией.",
-award2:"История предприятия",award2Desc:"Начало деятельности предприятия в городе Семей.",
-contactTag:"Свяжитесь с нами",contactTitle:"Будем рады вашему обращению",
-addressLabel:"Адрес",address:"г. Семей, Казахстан",phoneLabel:"Телефон",phone:"Уточняется",emailLabel:"Электронная почта",email:"Уточняется",
-contactBoxTitle:"Сотрудничество",contactBoxText:"Хотите узнать больше о продукции, условиях сотрудничества или производстве? Свяжитесь с нами.",
-contactButton:"Написать нам →",contactHint:"Перед публикацией замените адрес электронной почты на действующий адрес компании.",
-copyright:"Все права защищены."
+  navHome:"Главная",navAbout:"О компании",navProducts:"Продукция",navProduction:"Производство",navContacts:"Контакты",
+  heroEyebrow:"Семей · Казахстан · С 1991 года",
+  heroTitle:"Традиции<br>натурального<br>войлока.",
+  heroText:"РОЗА-ВВК — предприятие, объединяющее опыт, качество и традиции производства изделий из натуральной шерсти.",
+  heroButton:"Наша продукция →",heroMore:"О компании",
+  aboutTag:"Наша история",aboutTitle:"Опыт, проверенный временем",
+  aboutP1:"РОЗА-ВВК — производственное предприятие города Семей, Казахстан, специализирующееся на изделиях из натуральной шерсти и войлока.",
+  aboutP2:"Мы ценим качество натуральных материалов, производственный опыт и традиции обработки шерсти.",
+  stat1:"Год основания",stat2:"Казахстан",stat3:"Внимание к качеству",
+  productsTag:"Наш ассортимент",productsTitle:"Продукция предприятия",
+  productsDesc:"Натуральные материалы и изделия, созданные с использованием традиций войлочного производства.",
+  product1:"Войлок",product1Desc:"Войлочные материалы для различных сфер применения.",
+  product2:"Войлочная обувь",product2Desc:"Изделия из натуральной шерсти для комфорта и тепла.",
+  product3:"Шерстяные изделия",product3Desc:"Продукция на основе натурального шерстяного сырья.",
+  productLink:"УЗНАТЬ БОЛЬШЕ →",
+  productionTag:"Наше дело",productionTitle:"Производство и качество",
+  productionDesc:"В основе нашей работы — опыт, внимание к материалам и ответственное отношение к производству.",
+  prod1Title:"Натуральное сырьё",prod1Desc:"Шерсть как основа традиционного войлочного производства.",
+  prod2Title:"Производственный опыт",prod2Desc:"Многолетний опыт работы в сфере обработки шерсти.",
+  prod3Title:"Внимание к качеству",prod3Desc:"Ответственный подход к производству продукции.",
+  awardsTag:"Наши достижения",awardsTitle:"Признание и награды",awardsDesc:"Достижения предприятия и признание качества его продукции.",
+  award1:"«Алтын Сапа»",award1Desc:"Премия Президента Республики Казахстан в области качества. Уточните номинацию и статус награды перед публикацией.",
+  award2:"История предприятия",award2Desc:"Начало деятельности предприятия в городе Семей.",
+  contactTag:"Свяжитесь с нами",contactTitle:"Будем рады вашему обращению",
+  addressLabel:"Адрес",address:"ул. Шугаева, 153, Семей, Казахстан",
+  phoneLabel:"Телефон",phone:"+7 747 700 32 23",
+  emailLabel:"Электронная почта",email:"too.roza.vvk@gmail.com",
+  contactBoxTitle:"Сотрудничество",contactBoxText:"Хотите узнать больше о продукции, условиях сотрудничества или производстве? Свяжитесь с нами.",
+  contactButton:"Написать нам →",callButton:"Позвонить",mapButton:"ПОСМОТРЕТЬ НА КАРТЕ →",
+  copyright:"Все права защищены."
 },
 kz: {
-navHome:"Басты бет",navAbout:"Компания туралы",navProducts:"Өнімдер",navProduction:"Өндіріс",navContacts:"Байланыс",
-heroEyebrow:"Семей · Қазақстан · 1991 жылдан бері",
-heroTitle:"Табиғи киіздің<br>дәстүрі.",
-heroText:"РОЗА-ВВК — табиғи жүннен жасалған бұйымдар өндірісіндегі тәжірибе мен дәстүрді біріктіретін кәсіпорын.",
-heroButton:"Өнімдеріміз →",heroMore:"Компания туралы",
-aboutTag:"Біздің тарихымыз",aboutTitle:"Уақытпен дәлелденген тәжірибе",
-aboutP1:"РОЗА-ВВК — Қазақстанның Семей қаласында орналасқан, табиғи жүн мен киіз бұйымдарын өндіруге маманданған кәсіпорын.",
-aboutP2:"Біз табиғи материалдардың сапасын, өндірістік тәжірибені және жүн өңдеу дәстүрлерін бағалаймыз.",
-stat1:"Құрылған жылы",stat2:"Қазақстан",stat3:"Сапаға назар",
-productsTag:"Біздің ассортимент",productsTitle:"Кәсіпорын өнімдері",
-productsDesc:"Киіз өндірісінің дәстүрлерін қолдана отырып жасалған табиғи материалдар мен бұйымдар.",
-product1:"Киіз",product1Desc:"Әртүрлі мақсатта қолданылатын киіз материалдары.",
-product2:"Киіз аяқ киім",product2Desc:"Жайлылық пен жылуға арналған табиғи жүн бұйымдары.",
-product3:"Жүн бұйымдары",product3Desc:"Табиғи жүн шикізаты негізінде жасалған өнімдер.",
-productLink:"ТОЛЫҒЫРАҚ →",
-productionTag:"Біздің ісіміз",productionTitle:"Өндіріс және сапа",
-productionDesc:"Біздің жұмысымыздың негізі — тәжірибе, материалдарға ұқыпты қарау және өндіріске жауапкершілікпен қарау.",
-prod1Title:"Табиғи шикізат",prod1Desc:"Дәстүрлі киіз өндірісінің негізі — жүн.",
-prod2Title:"Өндірістік тәжірибе",prod2Desc:"Жүн өңдеу саласындағы көпжылдық тәжірибе.",
-prod3Title:"Сапаға назар",prod3Desc:"Өнім өндіруге жауапты көзқарас.",
-awardsTag:"Жетістіктеріміз",awardsTitle:"Марапаттар мен мойындау",awardsDesc:"Кәсіпорын жетістіктері мен өнім сапасының мойындалуы.",
-award1:"«Алтын Сапа»",award1Desc:"Қазақстан Республикасы Президентінің сапа саласындағы сыйлығы. Жарияламас бұрын марапаттың аталымы мен мәртебесін нақтылаңыз.",
-award2:"Кәсіпорын тарихы",award2Desc:"Кәсіпорын Семей қаласында өз қызметін бастады.",
-contactTag:"Бізбен байланысыңыз",contactTitle:"Сіздің хабарламаңызға қуаныштымыз",
-addressLabel:"Мекенжай",address:"Семей қаласы, Қазақстан",phoneLabel:"Телефон",phone:"Нақтылануда",emailLabel:"Электрондық пошта",email:"Нақтылануда",
-contactBoxTitle:"Ынтымақтастық",contactBoxText:"Өнімдер, ынтымақтастық шарттары немесе өндіріс туралы білгіңіз келе ме? Бізбен байланысыңыз.",
-contactButton:"Бізге жазыңыз →",contactHint:"Жарияламас бұрын электрондық пошта мекенжайын компанияның нақты мекенжайымен ауыстырыңыз.",
-copyright:"Барлық құқықтар қорғалған."
+  navHome:"Басты бет",navAbout:"Компания туралы",navProducts:"Өнімдер",navProduction:"Өндіріс",navContacts:"Байланыс",
+  heroEyebrow:"Семей · Қазақстан · 1991 жылдан бері",
+  heroTitle:"Табиғи киіздің<br>дәстүрі.",
+  heroText:"РОЗА-ВВК — табиғи жүннен жасалған бұйымдар өндірісіндегі тәжірибе мен дәстүрді біріктіретін кәсіпорын.",
+  heroButton:"Өнімдеріміз →",heroMore:"Компания туралы",
+  aboutTag:"Біздің тарихымыз",aboutTitle:"Уақытпен дәлелденген тәжірибе",
+  aboutP1:"РОЗА-ВВК — Қазақстанның Семей қаласында орналасқан, табиғи жүн мен киіз бұйымдарын өндіруге маманданған кәсіпорын.",
+  aboutP2:"Біз табиғи материалдардың сапасын, өндірістік тәжірибені және жүн өңдеу дәстүрлерін бағалаймыз.",
+  stat1:"Құрылған жылы",stat2:"Қазақстан",stat3:"Сапаға назар",
+  productsTag:"Біздің ассортимент",productsTitle:"Кәсіпорын өнімдері",
+  productsDesc:"Киіз өндірісінің дәстүрлерін қолдана отырып жасалған табиғи материалдар мен бұйымдар.",
+  product1:"Киіз",product1Desc:"Әртүрлі мақсатта қолданылатын киіз материалдары.",
+  product2:"Киіз аяқ киім",product2Desc:"Жайлылық пен жылуға арналған табиғи жүн бұйымдары.",
+  product3:"Жүн бұйымдары",product3Desc:"Табиғи жүн шикізаты негізінде жасалған өнімдер.",
+  productLink:"ТОЛЫҒЫРАҚ →",
+  productionTag:"Біздің ісіміз",productionTitle:"Өндіріс және сапа",
+  productionDesc:"Біздің жұмысымыздың негізі — тәжірибе, материалдарға ұқыпты қарау және өндіріске жауапкершілікпен қарау.",
+  prod1Title:"Табиғи шикізат",prod1Desc:"Дәстүрлі киіз өндірісінің негізі — жүн.",
+  prod2Title:"Өндірістік тәжірибе",prod2Desc:"Жүн өңдеу саласындағы көпжылдық тәжірибе.",
+  prod3Title:"Сапаға назар",prod3Desc:"Өнім өндіруге жауапты көзқарас.",
+  awardsTag:"Жетістіктеріміз",awardsTitle:"Марапаттар мен мойындау",awardsDesc:"Кәсіпорын жетістіктері мен өнім сапасының мойындалуы.",
+  award1:"«Алтын Сапа»",award1Desc:"Қазақстан Республикасы Президентінің сапа саласындағы сыйлығы. Жарияламас бұрын марапаттың аталымы мен мәртебесін нақтылаңыз.",
+  award2:"Кәсіпорын тарихы",award2Desc:"Кәсіпорын Семей қаласында өз қызметін бастады.",
+  contactTag:"Бізбен байланысыңыз",contactTitle:"Сіздің хабарламаңызға қуаныштымыз",
+  addressLabel:"Мекенжай",address:"Қазақстан, Семей қаласы, Шугаев көшесі, 153",
+  phoneLabel:"Телефон",phone:"+7 747 700 32 23",
+  emailLabel:"Электрондық пошта",email:"too.roza.vvk@gmail.com",
+  contactBoxTitle:"Ынтымақтастық",contactBoxText:"Өнімдер, ынтымақтастық шарттары немесе өндіріс туралы білгіңіз келе ме? Бізбен байланысыңыз.",
+  contactButton:"Бізге жазыңыз →",callButton:"Қоңырау шалу",mapButton:"КАРТАДАН КӨРУ →",
+  copyright:"Барлық құқықтар қорғалған."
 },
 en: {
-navHome:"Home",navAbout:"About us",navProducts:"Products",navProduction:"Production",navContacts:"Contact",
-heroEyebrow:"Semey · Kazakhstan · Since 1991",
-heroTitle:"The tradition<br>of natural<br>felt.",
-heroText:"ROZA-VVK is a manufacturing company combining experience, quality and the traditions of natural wool products.",
-heroButton:"Our products →",heroMore:"About us",
-aboutTag:"Our story",aboutTitle:"Experience proven by time",
-aboutP1:"ROZA-VVK is a manufacturing company based in Semey, Kazakhstan, specializing in natural wool and felt products.",
-aboutP2:"We value natural materials, manufacturing experience and the traditions of wool processing.",
-stat1:"Year established",stat2:"Kazakhstan",stat3:"Focus on quality",
-productsTag:"Our range",productsTitle:"Our products",
-productsDesc:"Natural materials and products created using the traditions of felt manufacturing.",
-product1:"Felt",product1Desc:"Felt materials for a variety of applications.",
-product2:"Felt footwear",product2Desc:"Natural wool products designed for warmth and comfort.",
-product3:"Wool products",product3Desc:"Products made from natural wool materials.",
-productLink:"LEARN MORE →",
-productionTag:"What we do",productionTitle:"Production and quality",
-productionDesc:"Our work is based on experience, care for materials and a responsible approach to manufacturing.",
-prod1Title:"Natural raw materials",prod1Desc:"Wool is the foundation of traditional felt production.",
-prod2Title:"Manufacturing experience",prod2Desc:"Years of experience in wool processing.",
-prod3Title:"Focus on quality",prod3Desc:"A responsible approach to product manufacturing.",
-awardsTag:"Our achievements",awardsTitle:"Recognition and awards",awardsDesc:"Company achievements and recognition of product quality.",
-award1:"Altyn Sapa",award1Desc:"President of Kazakhstan's award in the field of quality. Please verify the award category and status before publication.",
-award2:"Company history",award2Desc:"The company began its activities in Semey.",
-contactTag:"Get in touch",contactTitle:"We look forward to hearing from you",
-addressLabel:"Address",address:"Semey, Kazakhstan",phoneLabel:"Phone",phone:"To be confirmed",emailLabel:"Email",email:"To be confirmed",
-contactBoxTitle:"Cooperation",contactBoxText:"Would you like to learn more about our products, cooperation opportunities or manufacturing? Contact us.",
-contactButton:"Contact us →",contactHint:"Before publishing, replace the email address with the company's actual email.",
-copyright:"All rights reserved."
+  navHome:"Home",navAbout:"About us",navProducts:"Products",navProduction:"Production",navContacts:"Contact",
+  heroEyebrow:"Semey · Kazakhstan · Since 1991",
+  heroTitle:"The tradition<br>of natural<br>felt.",
+  heroText:"ROZA-VVK is a manufacturing company combining experience, quality and the traditions of natural wool products.",
+  heroButton:"Our products →",heroMore:"About us",
+  aboutTag:"Our story",aboutTitle:"Experience proven by time",
+  aboutP1:"ROZA-VVK is a manufacturing company based in Semey, Kazakhstan, specializing in natural wool and felt products.",
+  aboutP2:"We value natural materials, manufacturing experience and the traditions of wool processing.",
+  stat1:"Year established",stat2:"Kazakhstan",stat3:"Focus on quality",
+  productsTag:"Our range",productsTitle:"Our products",
+  productsDesc:"Natural materials and products created using the traditions of felt manufacturing.",
+  product1:"Felt",product1Desc:"Felt materials for a variety of applications.",
+  product2:"Felt footwear",product2Desc:"Natural wool products designed for warmth and comfort.",
+  product3:"Wool products",product3Desc:"Products made from natural wool materials.",
+  productLink:"LEARN MORE →",
+  productionTag:"What we do",productionTitle:"Production and quality",
+  productionDesc:"Our work is based on experience, care for materials and a responsible approach to manufacturing.",
+  prod1Title:"Natural raw materials",prod1Desc:"Wool is the foundation of traditional felt production.",
+  prod2Title:"Manufacturing experience",prod2Desc:"Years of experience in wool processing.",
+  prod3Title:"Focus on quality",prod3Desc:"A responsible approach to product manufacturing.",
+  awardsTag:"Our achievements",awardsTitle:"Recognition and awards",awardsDesc:"Company achievements and recognition of product quality.",
+  award1:"Altyn Sapa",award1Desc:"President of Kazakhstan's award in the field of quality. Please verify the award category and status before publication.",
+  award2:"Company history",award2Desc:"The company began its activities in Semey.",
+  contactTag:"Get in touch",contactTitle:"We look forward to hearing from you",
+  addressLabel:"Address",address:"153 Shugaev Street, Semey, Kazakhstan",
+  phoneLabel:"Phone",phone:"+7 747 700 32 23",
+  emailLabel:"Email",email:"too.roza.vvk@gmail.com",
+  contactBoxTitle:"Cooperation",contactBoxText:"Would you like to learn more about our products, cooperation opportunities or manufacturing? Contact us.",
+  contactButton:"Email us →",callButton:"Call us",mapButton:"VIEW ON MAP →",
+  copyright:"All rights reserved."
 }
 };
 
@@ -870,6 +752,5 @@ document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
 setLanguage(localStorage.getItem("rozaLanguage") || "ru");
 </script>
-
 </body>
 </html>
